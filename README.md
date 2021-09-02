@@ -1,7 +1,6 @@
 # Cypress Onboard
 
-Todo:
-- [x] Task 3 - iframe children check
-
-Don't know why, but task 3 works on file change refresh, but not on manual refresh in cypress browser.
-Tried cy.wait, cy.reload, cy.clearCookies, nothing helps. 
+Running:
+ 1. npm install
+ 2. cypress.json setup (adding env.email and env.pass) 
+ 3. recommendation: cypress open -b chrome
