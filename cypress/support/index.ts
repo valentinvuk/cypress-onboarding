@@ -29,6 +29,8 @@ declare namespace Cypress {
          * @example cy.openMozillaDocs();
          */
         openMozillaDocs(): () => void;
+
+        getIframeBody(): () => Chainable;
     }
 }
 
