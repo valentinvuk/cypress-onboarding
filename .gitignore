@@ -1,3 +1,4 @@
 # Project exclude paths
 /cypress/support/index.js
 /node_modules/
+/cypress.json
