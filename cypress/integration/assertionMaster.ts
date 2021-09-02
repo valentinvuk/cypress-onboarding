@@ -1,6 +1,8 @@
 describe("Assertion Master", () => {
     it("Asserts a lot", () => {
+        // @ts-ignore
         cy.googleAndCookies();
+        // @ts-ignore
         cy.openMozillaDocs();
         cy.url().should("eq", "https://developer.mozilla.org/en-US/");
         cy.get("#main-q").should("exist").type("map{enter}");
