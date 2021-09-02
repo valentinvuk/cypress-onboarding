@@ -9,7 +9,7 @@ Cypress.Commands.add("openMozillaDocs", () => {
 })
 
 Cypress.Commands.add('getIframeBody', () => {
-    return cy.wait(5000)
+    return cy.wait(4000)
         .get('.sample-code-frame')
         .its('0.contentDocument.body').should('not.be.empty')
         .then(cy.wrap);
