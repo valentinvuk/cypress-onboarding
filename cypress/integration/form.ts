@@ -11,6 +11,15 @@ describe("Form", () => {
         cy.get("#rendered-article-feed").should("contain","article");
 
         cy.visit("https://dev.to/settings/profile");
+        cy.get(".crayons-card").contains("Coding").scrollIntoView();
+        cy.wait(2500);
+
+        cy.get("textarea[id='profile[currently_learning]']").clear().type("Cypress");
+        cy.get(".sticky-footer-form").submit();
+
+        cy.get(".crayons-banner").should("contain","updated");
+
+
         cy.get("textarea[id='profile[currently_learning]']").clear().type("Cypress");
         cy.get(".sticky-footer-form").submit();
 
